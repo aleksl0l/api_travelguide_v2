@@ -1,10 +1,10 @@
 package user
 
 import (
+	"api_travelguide_v2/app/common"
 	"fmt"
 	"github.com/dgrijalva/jwt-go"
 	"github.com/gin-gonic/gin"
-	"go-api-todo/common"
 	"net/http"
 	"reflect"
 	"strings"

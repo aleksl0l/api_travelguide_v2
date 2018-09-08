@@ -1,9 +1,9 @@
-package main
+package app
 
 import (
+	"api_travelguide_v2/app/common"
+	"api_travelguide_v2/app/user"
 	"github.com/gin-gonic/gin"
-	"go-api-todo/common"
-	"go-api-todo/user"
 )
 
 func main() {

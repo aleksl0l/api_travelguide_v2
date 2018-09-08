@@ -1,8 +1,8 @@
 package user
 
 import (
+	"api_travelguide_v2/app/common"
 	"github.com/gin-gonic/gin"
-	"go-api-todo/common"
 	"net/http"
 )
 
