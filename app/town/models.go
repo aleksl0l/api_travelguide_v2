@@ -8,7 +8,7 @@ import (
 const townDocument = "town"
 
 type Town struct {
-	Id       bson.ObjectId `json:"-" bson:"_id,omitempty"`
+	Id       bson.ObjectId `json:"id" bson:"_id,omitempty"`
 	Name     string        `json:"name" bson:"name"`
 	UrlPhoto string        `json:"url_photo" bson:"url_photo"`
 

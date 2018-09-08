@@ -28,8 +28,8 @@ func KeyFunc(token *jwt.Token) (interface{}, error) {
 }
 
 func Bind(c *gin.Context, obj interface{}) error {
-	b := binding.Default(c.Request.Method, c.ContentType())
-	return c.ShouldBindWith(obj, b)
+	b := binding.Default("POST", c.ContentType())
+	return c.MustBindWith(obj, b)
 }
 
 type CommonError struct {
