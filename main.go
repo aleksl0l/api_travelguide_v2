@@ -1,9 +1,10 @@
 package main
 
 import (
-	"./app/common"
-	"./app/town"
-	"./app/user"
+	"api_travelguide_v2/app/common"
+	"api_travelguide_v2/app/sight"
+	"api_travelguide_v2/app/town"
+	"api_travelguide_v2/app/user"
 	"github.com/gin-gonic/gin"
 )
 
@@ -17,7 +18,7 @@ func main() {
 
 	user.UserRegister(v1.Group("/user"))
 	town.TownRegister(v1.Group("/town"))
-	//sight.SightRegister(v1.Group("/sight"))
+	sight.SightRegister(v1.Group("/sight"))
 
 	r.Run()
 }
